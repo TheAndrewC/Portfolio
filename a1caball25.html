@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>cg3sp20ad JS Homework</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	
+	<body>
+	  <div id="wrapper">
+      
+      <!-- THIS H1 ELEMENT SHOULD NOT BE CHANGED DIRECTLY. 
+            YOU MAY ONLY CHANGE THE INNERHTML OF THIS 
+            ELEMENT USING JAVASCRIPT -->
+      <div id="counter-wrapper">      
+    	  <h1 id="counter">0</h1>
+      </div>
+  	  
+  	  
+      <!-- WRAPPER FOR OUR INCR AND DECR BUTTONS -->
+  	  <section id="buttons">
+  	  
+        <!-- CLICKING THIS BUTTON SHOULD DECREASE THE NUMBER 
+              IN THE COUNTER H1 TAG BY 1. NOTE THAT IF YOU 
+              TRY TO DECREASE BELOW 0,A POPUP SHOULD WARN 
+              THAT THE USER CANNOT DO THIS. -->
+        <div id="left">
+          <button id="decr" class="btn" onClick="decr()">Decrease</button>
+        </div>
+      
+        <!-- CLICKING THE INCREASE BUTTON SHOULD INCREMENT 
+        THE COUNTER BY ONE. THERE IS NO LIMIT ON THIS NUMBER; 
+        IT CAN INCREASE FOREVER. -->
+    	  <div id="right">
+          <button id="incr" class="btn" onClick="incr()">Increase</button>
+        </div>
+    	  
+      </section>
+      
+      <!-- CLICKING THIS BUTTON DISPLAYS A MESSAGE THAT CONTAINS 
+        THE NAME THE USER INPUTS IN THE TEXT BOX. -->
+      <div id="message-wrapper">
+        <button id="msg" class="btn btn-primary" onClick="dispMessage()">Display message</button>
+      </div>
+      <!-- MESSAGE TEXT SHOULD BE DISPLAYED IN THE PARAGRAPH BELOW. -->
+      <p id="msgText"></p>
+	  
+      <p>An important person in the history of computing is Max Mathews. He studied electrical engineering at Cal Tech and MIT. He was a pioneer in digital music production. He created the first fully developed music synthesis system for interactive compostion and realtime performances using minicomputers. <br>Both Mathews's and I share a love of music. I have played piano and trumpet for over 10 years. I frequently rely on audio producing software like iReal Pro when I want to practice with a computer generated band. It creates a computer generated drum set, piano, bass, guitar, and other aux. percussion that play the backing track to any song, so that I can play the melody and improvise over the chords. This very useful app would not have been possible without the innovation of Max Mathews.<br><img src="images/Mathews picture.png" style="width:250px;" alt="Picture of Max Mathews" id="img1" onclick="changeImage()"><br>This picture is clickable!
+      </p>
+
+    </div>
+
+	</body>
+	<script src="scripts.js">
+
+  </script>
+</html>
